@@ -1,7 +1,6 @@
 package com.example.vetvisor;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,19 +19,12 @@ public class Pug extends AppCompatActivity {
         characteristicsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Create an AlertDialog to show the characteristics
-                AlertDialog.Builder builder = new AlertDialog.Builder(Pug.this);
-                builder.setTitle("Pug Characteristics");
-                builder.setMessage(getString(R.string.pug_characteristics));
-                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-                builder.show();
+                // Pass data to Profile activity and start it
+                Intent intent = new Intent(Pug.this, Profile.class);
+                intent.putExtra("petName", "Pug"); // Pass the name of the pet
+                intent.putExtra("petImageResId", R.drawable.pug); // Pass the image resource ID of the pet
+                startActivity(intent);
             }
         });
     }
 }
-

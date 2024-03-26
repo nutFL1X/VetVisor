@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- diseases_activity.xml -->
+<!-- diseases_activity.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Symptoms -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Symptoms:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_vomiting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vomiting"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_weight_loss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight Loss"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_reduced_appetite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reduced Appetite"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_ear_infections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ear Infections"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_hair_loss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hair Loss"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_shivering"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shivering"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_trouble_breathing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trouble Breathing"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_difficulty_urinating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Difficulty Urinating"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_fever"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fever"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_high_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High Temperature"/>
+
+    <!-- Button to show possible diseases -->
+
+    <!-- Possible diseases -->
+    <Button
+        android:id="@+id/button_show_diseases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Show Possible Diseases" />
+
+    <TextView
+        android:id="@+id/textview_possible_diseases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
+

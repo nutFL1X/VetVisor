@@ -24,5 +24,6 @@
     <string name="bulldog_breed_name">Bulldog</string>
     <string name="bulldog_description">The Bulldog is a medium-sized breed of dog known for its muscular build, distinctive wrinkled face, and pushed-in nose. Bulldogs have a calm and courageous temperament, making them excellent companions. They are affectionate, loyal, and good with children, although they may have a stubborn streak at times.</string>
     <string name="bulldog_characteristics">Bulldogs are affectionate, loyal, and courageous dogs. Despite their muscular appearance, they have a gentle disposition and are excellent companions for families. Bulldogs may require regular exercise and proper training to manage their strong-willed nature. They are known for their snoring and tendency to drool.</string>
+    <string name="pet_image_desc">Pet Image Description</string>
 
 </resources>

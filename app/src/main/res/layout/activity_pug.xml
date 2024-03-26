@@ -60,7 +60,7 @@
         android:layout_marginTop="619dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="20dp"
-        android:text="Characteristics" />
+        android:text="Proceed" />
 
     <TextView
         android:id="@+id/characteristicsTextView"

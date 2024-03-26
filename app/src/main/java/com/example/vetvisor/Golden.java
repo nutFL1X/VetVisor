@@ -19,8 +19,10 @@ public class Golden extends AppCompatActivity {
         characteristicsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Start the CharacteristicsActivity
+                // Pass data to Profile activity and start it
                 Intent intent = new Intent(Golden.this, Profile.class);
+                intent.putExtra("petName", "Golden Retriever"); // Pass the name of the pet
+                intent.putExtra("petImageResId", R.drawable.retriever); // Pass the image resource ID of the pet
                 startActivity(intent);
             }
         });

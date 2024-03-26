@@ -19,8 +19,10 @@ public class Bull extends AppCompatActivity {
         characteristicsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Start the CharacteristicsActivity
+                // Pass data to Profile activity and start it
                 Intent intent = new Intent(Bull.this, Profile.class);
+                intent.putExtra("petName", "Bulldog"); // Pass the name of the pet
+                intent.putExtra("petImageResId", R.drawable.bulldog); // Pass the image resource ID of the pet
                 startActivity(intent);
             }
         });

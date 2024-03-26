@@ -1,10 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<!-- activity_profile.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Profile">
+    android:padding="16dp"
+    android:background="@color/white">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Pet Image -->
+
+    <!-- Pet Name -->
+
+    <ImageView
+        android:id="@+id/petImageView"
+        android:layout_width="209dp"
+        android:layout_height="188dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="174dp"
+        android:contentDescription="@string/pet_image_desc"
+        android:scaleType="centerCrop"
+        android:transitionName="petImageTransition" />
+
+    <TextView
+        android:id="@+id/petNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/petImageView"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <!-- Add any other profile details here as needed -->
+
+    <!-- Info Button -->
+
+    <!-- Symptoms Button -->
+    <Button
+        android:id="@+id/infoButton"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/petNameTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="215dp"
+        android:onClick="showInfoPopup"
+        android:text="Info" />
+
+    <Button
+        android:id="@+id/symptomsButton"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/infoButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="214dp"
+        android:onClick="openSymptomsActivity"
+        android:text="Symptoms" />
+
+</RelativeLayout>
