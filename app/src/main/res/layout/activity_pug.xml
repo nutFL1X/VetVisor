@@ -1,0 +1,74 @@
+<!-- activity_pug.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Pug Image -->
+    <ImageView
+        android:id="@+id/pugImageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bgpug"
+        android:contentDescription="@string/pug_image_desc"
+        android:background="@drawable/trans"
+        android:elevation="8dp"
+        android:transitionName="pugImageTransition" />
+
+    <!-- Pug Breed Name -->
+
+    <!-- Pug Breed Description -->
+    <TextView
+        android:id="@+id/pugNameTextView"
+        android:layout_width="82dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/pugImageView"
+        android:layout_marginTop="17dp"
+        android:text="@string/pug_breed_name"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pugDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pugNameTextView"
+        android:text="@string/pug_description"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:lineSpacingMultiplier="1.3"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button for Characteristics -->
+    <!-- Characteristics Description Box -->
+
+    <Button
+        android:id="@+id/characteristicsButton"
+        android:layout_width="271dp"
+        android:layout_height="82dp"
+        android:layout_below="@id/pugDescriptionTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="141dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="68dp"
+        android:text="Characteristics" />
+
+    <TextView
+        android:id="@+id/characteristicsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/characteristicsButton"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:text="@string/pug_characteristics"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+</RelativeLayout>

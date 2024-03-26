@@ -5,34 +5,26 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-
-import android.widget.ToggleButton;
-
+import android.widget.ImageView;
 
 public class Screen4 extends AppCompatActivity {
-    Button next3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen4);
-        next3 = findViewById(R.id.next3);
-        next3.setOnClickListener(new View.OnClickListener() {
+
+        ImageView pugImage = findViewById(R.id.pu);
+        pugImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openScreen3();
+                openPugActivity();
             }
         });
-
     }
-    public void openScreen3(){
-        Intent intent = new Intent(this, Screen5.class);
+
+    private void openPugActivity() {
+        Intent intent = new Intent(this, Pug.class);
         startActivity(intent);
     }
-    public void previous(View view){
-        Intent previous = new Intent(this,Screen3.class);
-        startActivity(previous);
-
-    }}
+}

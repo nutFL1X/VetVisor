@@ -13,6 +13,10 @@
         android:theme="@style/Theme.VetVisor"
         tools:targetApi="31">
         <activity
+            android:name=".Pug"
+            android:exported="false"
+            android:parentActivityName=".Screen4" />
+        <activity
             android:name=".Screen5"
             android:exported="false"
             android:label="@string/title_activity_screen5"
@@ -21,7 +25,7 @@
         <activity
             android:name=".Screen4"
             android:exported="false"
-            android:parentActivityName=".Screen3"/>
+            android:parentActivityName=".Screen3" />
         <activity
             android:name=".Screen3"
             android:exported="false"

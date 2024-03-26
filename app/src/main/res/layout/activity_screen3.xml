@@ -39,14 +39,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.009" />
 
-    <ImageButton
+    <ImageView
+        android:id="@+id/dog1"
         android:layout_width="144dp"
         android:layout_height="146dp"
         android:background="@drawable/trans"
         android:elevation="8dp"
         android:padding="16dp"
         android:scaleType="fitXY"
-        android:src="@drawable/logo1"
+        android:src="@drawable/image1"
+        android:clickable="true"
+        android:onClick="changeImage"
+        android:contentDescription="Clickable Image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.164"
@@ -54,14 +58,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
 
-    <ImageButton
+    <ImageView
+        android:id="@+id/cat1"
         android:layout_width="144dp"
         android:layout_height="146dp"
         android:background="@drawable/trans"
         android:elevation="8dp"
         android:padding="16dp"
         android:scaleType="fitXY"
-        android:src="@drawable/logo2"
+        android:src="@drawable/image3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.812"

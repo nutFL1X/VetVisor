@@ -5,23 +5,11 @@
     <string name="next">Next</string>
     <string name="Select_your_breed">Select your breed</string>
     <string name="title_activity_screen5">Screen5</string>
-    <string name="large_text">
-        "The Shiba Inu is a breed of hunting dog from Japan. A small-to-medium breed, it is the smallest of the six original breed of dogs native to Japan.\n\n"
-
-
-        "A small, alert, and agile dog that copes very well with mountainous terrain and hiking trails, the Shiba Inu was originally bred for hunting."
-        "It looks similar to other Japanese dog breeds such as the Akita Inu or Hokkaido, but the Shiba Inu is a different breed with a distinct bloodline, temperament, and smaller size than other Japanese dog breeds.\n\n"
-        <b>Appearance:\n\n</b>
-        "The Shiba's frame is compact with well-developed muscles. \n\n"
-        "The Shiba Inu is double coated, with the outer coat being stiff and straight and the undercoat soft and thick. Fur is short and even on the foxlike face, ears, and legs. Guard hairs stand off the body and are about 4 to 5 cm long at the withers. The purpose of the guard hairs is to protect their underlying skin and to repel rain or snow. Tail hair is slightly longer and stands open in a brush.[6] Their tails are a defining characteristic and make them stand apart from other dog breeds.\n\n"
-
-        "The cream color is considered a "major fault" by both the Japan Kennel Club and American Kennel Club.[6] It should never be intentionally bred in a show dog, as the required markings known as "urajiro" (裏白) are not visible; "Urajiro" literally translates to "underside white". Conversely, a white (cream) coat is perfectly acceptable according to the British Kennel Club breed standard.\n\n"
-        "The urajiro (cream to white ventral color) is required in the following areas on all coat colors: on the sides of the muzzle, on the cheeks, inside the ears, on the underjaw and upper throat inside of legs, on the abdomen, around the vent and the ventral side of the tail. On reds: commonly on the throat, fore chest, and chest. On blacks and sesames: commonly as a triangular mark on both sides of the fore chest.\n\n"
-        <b>Temperament:\n\n</b>
-        "The Shiba Inu is considered an alert, affectionate, and independent breed with high intelligence but also somewhat stubborn and strong-willed.\n\n"
-        "The terms "spirited boldness" (悍威, kan'i), "good nature" (良性, ryōsei), and "artlessness" (素朴, soboku) have subtle interpretations that have been the subject of much commentary.\n\n"
-        "A survey of experts classified the Shiba Inu as having 'high aggression, high reactivity and medium trainability'.A possible explanation for this and other observed behaviour is that the Shiba Inu is more closely related to the wolf than domesticated dogs from other countries.Due to the high intelligence of the breed it requires a lot of exercise and stimulation. Insufficient exercise can lead to anxiety which leads to undesirable behaviours notably the 'shiba scream'."
-
-    </string>
     <string name="action_settings">Settings</string>
+    <string name="pug_image_desc">Pug Image Description</string>
+    <string name="pug_breed_name">Pug</string>
+    <string name="pug_description">The Pug is a breed of dog with a wrinkly face and curly tail. Pugs are known for their playful and friendly personality. They are often referred to as clowns due to their comical behavior</string>
+    <string name="characteristics_button_label">Characteristics</string>
+    <string name="pug_characteristics">Pugs are charming, mischievous, and loving dogs. They have a distinctive wrinkled face and a curled tail. Pugs are known for their sociable and affectionate nature. They are excellent companions for families and individuals alike.</string>
+    <string name="large_text">PUGS ARE THE BEST</string>
 </resources>
