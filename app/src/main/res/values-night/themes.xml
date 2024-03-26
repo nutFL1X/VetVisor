@@ -3,5 +3,7 @@
     <style name="Base.Theme.VetVisor" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- Remove or set to null to use system default -->
+        <item name="android:statusBarColor">@null</item>
     </style>
 </resources>
