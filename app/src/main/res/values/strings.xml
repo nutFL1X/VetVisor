@@ -8,8 +8,21 @@
     <string name="action_settings">Settings</string>
     <string name="pug_image_desc">Pug Image Description</string>
     <string name="pug_breed_name">Pug</string>
-    <string name="pug_description">The Pug is a breed of dog with a wrinkly face and curly tail. Pugs are known for their playful and friendly personality. They are often referred to as clowns due to their comical behavior</string>
-    <string name="characteristics_button_label">Characteristics</string>
+    <string name="pug_description">The Pug is a breed of dog with a wrinkly face and curly tail. Pugs are known for their playful and friendly personality. They are often referred to as clowns due to their comical behavior.\n\nPugs make excellent companions and are suitable for various living situations. They are adaptable, affectionate, and generally get along well with children and other pets.</string>
+    <string name="characteristics_button_label">Proceed</string>
     <string name="pug_characteristics">Pugs are charming, mischievous, and loving dogs. They have a distinctive wrinkled face and a curled tail. Pugs are known for their sociable and affectionate nature. They are excellent companions for families and individuals alike.</string>
     <string name="large_text">PUGS ARE THE BEST</string>
+    <string name="shiba_image_desc">Shiba Inu Image Description</string>
+    <string name="shiba_breed_name">Shiba Inu</string>
+    <string name="shiba_description">The Shiba Inu is a breed of dog originating from Japan. They are known for their spirited personality, small upright ears, and curled tail. Shiba Inus are independent and intelligent dogs, often displaying a cat-like aloofness.</string>
+    <string name="shiba_characteristics">Shiba Inus are spirited, alert, and bold dogs. They are known for their confident and independent nature. Shiba Inus are loyal companions but can be reserved around strangers. They require early socialization and consistent training.</string>
+    <string name="golden_retriever_image_desc">Golden Retriever Image Description</string>
+    <string name="golden_retriever_breed_name">Golden Retriever</string>
+    <string name="golden_retriever_description">The Golden Retriever is a large-sized breed of dog known for its friendly and gentle temperament. They are intelligent, obedient, and eager to please, making them excellent family pets and reliable working dogs. Golden Retrievers are versatile and excel in various roles, including therapy, assistance, and search and rescue.</string>
+    <string name="golden_retriever_characteristics">Golden Retrievers are friendly, intelligent, and devoted dogs. They have a gentle temperament and are excellent with children, making them popular family pets. Golden Retrievers are highly trainable and excel in obedience and agility activities. They are also known for their love of water and retrieving instincts.</string>
+    <string name="bulldog_image_desc">Bulldog Image Description</string>
+    <string name="bulldog_breed_name">Bulldog</string>
+    <string name="bulldog_description">The Bulldog is a medium-sized breed of dog known for its muscular build, distinctive wrinkled face, and pushed-in nose. Bulldogs have a calm and courageous temperament, making them excellent companions. They are affectionate, loyal, and good with children, although they may have a stubborn streak at times.</string>
+    <string name="bulldog_characteristics">Bulldogs are affectionate, loyal, and courageous dogs. Despite their muscular appearance, they have a gentle disposition and are excellent companions for families. Bulldogs may require regular exercise and proper training to manage their strong-willed nature. They are known for their snoring and tendency to drool.</string>
+
 </resources>

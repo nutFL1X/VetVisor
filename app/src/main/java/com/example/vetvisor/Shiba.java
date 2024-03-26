@@ -8,12 +8,12 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Pug extends AppCompatActivity {
+public class Shiba extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pug);
+        setContentView(R.layout.activity_shiba);
 
         Button characteristicsButton = findViewById(R.id.characteristicsButton);
 
@@ -21,9 +21,9 @@ public class Pug extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Create an AlertDialog to show the characteristics
-                AlertDialog.Builder builder = new AlertDialog.Builder(Pug.this);
-                builder.setTitle("Pug Characteristics");
-                builder.setMessage(getString(R.string.pug_characteristics));
+                AlertDialog.Builder builder = new AlertDialog.Builder(Shiba.this);
+                builder.setTitle("Shiba Inu Characteristics");
+                builder.setMessage(getString(R.string.shiba_characteristics));
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -35,4 +35,3 @@ public class Pug extends AppCompatActivity {
         });
     }
 }
-
