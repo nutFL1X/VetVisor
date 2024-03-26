@@ -134,7 +134,6 @@ public class Symptoms extends AppCompatActivity {
         if (selectedSymptoms.contains("Shivering") && selectedSymptoms.contains("Difficulty Urinating"))
         {
             possibleDiseases.add("Bladder stones");
-            possibleDiseases.add("Urinary tract infections");
             possibleDiseases.add("Prostate issues in male animals");
         }
         if (selectedSymptoms.contains("Vomiting") && selectedSymptoms.contains("Ear Infections") && selectedSymptoms.contains("Hair Loss"))
@@ -200,6 +199,21 @@ public class Symptoms extends AppCompatActivity {
             possibleDiseases.add("Serious systemic conditions affecting metabolism");
             possibleDiseases.add("Hormonal imbalances");
             possibleDiseases.add("Severe infections");
+        }
+        if (selectedSymptoms.contains("Weight Loss") && selectedSymptoms.contains("Ear Infections") && selectedSymptoms.contains("Fever")) {
+            possibleDiseases.add("Ear infections");
+            possibleDiseases.add("Respiratory infections");
+            possibleDiseases.add("Systemic infections");
+        }
+        if (selectedSymptoms.contains("Trouble Breathing") && selectedSymptoms.contains("High Temperature")) {
+            possibleDiseases.add("Respiratory infections");
+            possibleDiseases.add("Pneumonia");
+            possibleDiseases.add("Systemic infections");
+        }
+        if (selectedSymptoms.contains("Vomiting") && selectedSymptoms.contains("Trouble Breathing") && selectedSymptoms.contains("Fever")) {
+            possibleDiseases.add("Respiratory infections");
+            possibleDiseases.add("Gastrointestinal issues");
+            possibleDiseases.add("Systemic infections");
         }
         return possibleDiseases;
     }
