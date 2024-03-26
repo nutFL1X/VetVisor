@@ -30,14 +30,14 @@
         android:fontFamily="@font/alata"
         android:text="Shiba Inu"
         android:textColor="#000000"
-        android:textSize="12dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.556" />
+        app:layout_constraintVertical_bias="0.548" />
 
     <ImageView
         android:id="@+id/gold"
@@ -58,14 +58,14 @@
         android:fontFamily="@font/alata"
         android:text="Golden Retriever"
         android:textColor="#000000"
-        android:textSize="12dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.845" />
+        app:layout_constraintVertical_bias="0.851" />
 
     <TextView
         android:id="@+id/Bulld"
@@ -74,14 +74,14 @@
         android:fontFamily="@font/alata"
         android:text="Bulldog"
         android:textColor="#000000"
-        android:textSize="12dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.755"
+        app:layout_constraintHorizontal_bias="0.78"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.845" />
+        app:layout_constraintVertical_bias="0.851" />
 
     <TextView
         android:id="@+id/Pug"
@@ -90,14 +90,14 @@
         android:fontFamily="@font/alata"
         android:text="Pug"
         android:textColor="#000000"
-        android:textSize="12dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.748"
+        app:layout_constraintHorizontal_bias="0.761"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.556" />
+        app:layout_constraintVertical_bias="0.548" />
 
     <ImageView
         android:id="@+id/pu"

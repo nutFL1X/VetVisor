@@ -1,91 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- diseases_activity.xml -->
-<!-- diseases_activity.xml -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:background="@color/white"
+    tools:context=".Symptoms">
 
-    <!-- Symptoms -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Select up to 3 symptoms:"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginBottom="8dp"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
 
     <CheckBox
         android:id="@+id/checkbox_vomiting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Vomiting"/>
+        android:text="Vomiting"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073" />
 
     <CheckBox
         android:id="@+id/checkbox_weight_loss"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Weight Loss"/>
+        android:text="Weight Loss"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
 
     <CheckBox
         android:id="@+id/checkbox_reduced_appetite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reduced Appetite"/>
+        android:text="Reduced Appetite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.213" />
 
     <CheckBox
         android:id="@+id/checkbox_ear_infections"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ear Infections"/>
+        android:text="Ear Infections"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.284" />
 
     <CheckBox
         android:id="@+id/checkbox_hair_loss"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hair Loss"/>
+        android:text="Hair Loss"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354" />
 
     <CheckBox
         android:id="@+id/checkbox_shivering"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Shivering"/>
+        android:text="Shivering"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424" />
 
     <CheckBox
         android:id="@+id/checkbox_trouble_breathing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Trouble Breathing"/>
+        android:text="Trouble Breathing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494" />
 
     <CheckBox
         android:id="@+id/checkbox_difficulty_urinating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Difficulty Urinating"/>
+        android:text="Difficulty Urinating"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565" />
 
     <CheckBox
         android:id="@+id/checkbox_fever"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fever"/>
+        android:text="Fever"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.635" />
 
     <CheckBox
         android:id="@+id/checkbox_high_temperature"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="High Temperature"/>
+        android:text="High Temperature"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.705" />
 
-    <!-- Button to show possible diseases -->
-
-    <!-- Possible diseases -->
     <Button
         android:id="@+id/button_show_diseases"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:text="Show Possible Diseases" />
+        android:backgroundTint="#000000"
+        android:foregroundTint="#FFFFFF"
+        android:text="Show Possible Diseases"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
 
     <TextView
         android:id="@+id/textview_possible_diseases"
@@ -93,7 +173,13 @@
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginTop="16dp"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872" />
 
-</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 
