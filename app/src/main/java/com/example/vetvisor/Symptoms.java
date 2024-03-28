@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +25,9 @@ public class Symptoms extends AppCompatActivity {
 
     // TextView to display possible diseases
     private TextView textviewPossibleDiseases;
+
+    // ScrollView for displaying output
+    private ScrollView scrollView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +69,9 @@ public class Symptoms extends AppCompatActivity {
         buttonShowDiseases = findViewById(R.id.button_show_diseases);
 
         textviewPossibleDiseases = findViewById(R.id.textview_possible_diseases);
+
+        // Initialize ScrollView
+        scrollView = findViewById(R.id.scrollView);
     }
 
     // Get selected symptoms

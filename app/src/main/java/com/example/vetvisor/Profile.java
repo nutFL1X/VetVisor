@@ -39,10 +39,10 @@ public class Profile extends AppCompatActivity {
     public void showInfoPopup(View view) {
         // Get the pet information
         TextView petNameTextView = findViewById(R.id.petNameTextView);
-        String petName = petNameTextView.getText().toString();
-        String petType = "Dog"; // Replace with the actual type of pet
-        String petBreed = petNameTextView.getText().toString(); // Replace with the actual breed of pet
-        String lastLocation = "Not implemented yet"; // Replace with the actual last location of pet
+        String petName = "(Need to implement database)";
+        String petType = "Dog";
+        String petBreed = petNameTextView.getText().toString();
+        String lastLocation = "Not implemented yet";
 
         // Create the info message
         StringBuilder infoMessage = new StringBuilder();

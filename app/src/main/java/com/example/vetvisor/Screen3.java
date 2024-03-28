@@ -28,7 +28,13 @@ public class Screen3 extends AppCompatActivity {
         next2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openScreen3();
+                if (isDogImage1 && isCatImage3) {
+                    Toast.makeText(Screen3.this, "Select an animal", Toast.LENGTH_SHORT).show();
+                } else if (isDogImage1) {
+                    openScreen5();
+                } else if (isCatImage3) {
+                    openScreen4();
+                }
             }
         });
 
@@ -38,20 +44,29 @@ public class Screen3 extends AppCompatActivity {
         dog1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                changeDogImage();
+                if (isDogImage1) {
+                    selectDogImage();
+                }
             }
         });
 
         cat1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                changeCatImage();
+                if (isCatImage3) {
+                    selectCatImage();
+                }
             }
         });
     }
 
-    public void openScreen3() {
+    public void openScreen4() {
         Intent intent = new Intent(this, Screen4.class);
+        startActivity(intent);
+    }
+
+    public void openScreen5() {
+        Intent intent = new Intent(this, Screen5.class);
         startActivity(intent);
     }
 
@@ -60,31 +75,23 @@ public class Screen3 extends AppCompatActivity {
         startActivity(previous);
     }
 
-    private void changeDogImage() {
-        if (isDogImage1) {
-            dog1.setImageResource(R.drawable.image2);
-            Toast.makeText(this, "Selected Dog", Toast.LENGTH_SHORT).show();
-        } else {
-            dog1.setImageResource(R.drawable.image1);
-        }
-        isDogImage1 = !isDogImage1;
-        if (!isDogImage1) {
-            cat1.setImageResource(R.drawable.image3);
-            isCatImage3 = true;
-        }
+    private void selectDogImage() {
+        dog1.setImageResource(R.drawable.image2);
+        cat1.setImageResource(R.drawable.image3);
+
+        isDogImage1 = false;
+        isCatImage3 = true;
+
+        Toast.makeText(this, "Selected Dog", Toast.LENGTH_SHORT).show();
     }
 
-    private void changeCatImage() {
-        if (isCatImage3) {
-            cat1.setImageResource(R.drawable.image4);
-            Toast.makeText(this, "Selected Cat", Toast.LENGTH_SHORT).show();
-        } else {
-            cat1.setImageResource(R.drawable.image3);
-        }
-        isCatImage3 = !isCatImage3;
-        if (!isCatImage3) {
-            dog1.setImageResource(R.drawable.image1);
-            isDogImage1 = true;
-        }
+    private void selectCatImage() {
+        dog1.setImageResource(R.drawable.image1);
+        cat1.setImageResource(R.drawable.image4);
+
+        isDogImage1 = true;
+        isCatImage3 = false;
+
+        Toast.makeText(this, "Selected Cat", Toast.LENGTH_SHORT).show();
     }
 }

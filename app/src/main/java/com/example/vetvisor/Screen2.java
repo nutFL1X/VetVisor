@@ -38,7 +38,7 @@ public class Screen2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Show a toast message for 3 seconds
-                Toast.makeText(Screen2.this, "Contact @nutfl.x", Toast.LENGTH_LONG).show();
+                Toast.makeText(Screen2.this, "Contact @9004129081", Toast.LENGTH_LONG).show();
             }
         });
     }
