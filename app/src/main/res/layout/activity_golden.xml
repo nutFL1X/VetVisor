@@ -19,7 +19,8 @@
       android:transitionName="goldenRetrieverImageTransition"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.5"
-      app:layout_constraintStart_toStartOf="parent" />
+      app:layout_constraintStart_toStartOf="parent"
+      tools:ignore="MissingConstraints" />
 
   <!-- Golden Retriever Breed Name -->
 
@@ -88,6 +89,7 @@
       android:text="@string/golden_retriever_characteristics"
       android:textColor="@color/black"
       android:textSize="16sp"
-      android:visibility="gone" />
+      android:visibility="gone"
+      tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

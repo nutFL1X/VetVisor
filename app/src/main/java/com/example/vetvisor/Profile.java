@@ -33,6 +33,15 @@ public class Profile extends AppCompatActivity {
             petNameTextView.setText(petName);
             petImageView.setImageResource(petImageResId);
         }
+
+        // Find the button and set an OnClickListener
+        findViewById(R.id.nfcButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Open the NFC activity
+                openNFCActivity();
+            }
+        });
     }
 
     // Method to show the info popup
@@ -68,6 +77,12 @@ public class Profile extends AppCompatActivity {
     // Method to open the Symptoms activity
     public void openSymptomsActivity(View view) {
         Intent intent = new Intent(this, Symptoms.class);
+        startActivity(intent);
+    }
+
+    // Method to open the NFC activity
+    private void openNFCActivity() {
+        Intent intent = new Intent(this, NFC.class);
         startActivity(intent);
     }
 }
