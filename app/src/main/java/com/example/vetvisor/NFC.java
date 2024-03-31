@@ -11,10 +11,11 @@ import android.nfc.NdefRecord;
 import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import android.nfc.tech.Ndef;
+import android.os.VibrationEffect;
 import android.nfc.tech.NdefFormatable;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
+import android.os.Vibrator;
 import android.widget.EditText;
 import android.util.Log;
 import android.widget.Toast;
@@ -29,12 +30,15 @@ public class NFC extends AppCompatActivity {
     private IntentFilter[] intentFiltersArray;
     private boolean isWriteModeEnabled = false;
     private NdefMessage ndefMessageToWrite;
+    private Vibrator vibrator; // Declare vibrator
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nfc);
         nfcAdapter = NfcAdapter.getDefaultAdapter(this);
+
+        vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
 
         // Create PendingIntent for NFC intent
         pendingIntent = PendingIntent.getActivity(this, 0,
@@ -92,6 +96,9 @@ public class NFC extends AppCompatActivity {
                     });
                     AlertDialog alertDialog = alertDialogBuilder.create();
                     alertDialog.show();
+
+                    // Vibrate when NFC tag is scanned successfully
+                    vibrate();
                 } else {
                     // Handle case where tag content is null or empty
                     Toast.makeText(this, "Empty or unsupported NFC tag.", Toast.LENGTH_SHORT).show();
@@ -190,6 +197,7 @@ public class NFC extends AppCompatActivity {
                         Log.e("NFC", "Error closing NDEF connection", e);
                     }
                 }
+                vibrate();
             } else {
                 NdefFormatable ndefFormatable = NdefFormatable.get(tag);
                 if (ndefFormatable != null) {
@@ -214,6 +222,14 @@ public class NFC extends AppCompatActivity {
         isWriteModeEnabled = false;
         ndefMessageToWrite = null;
     }
+
+    private void vibrate() {
+        if (vibrator != null) {
+            // Vibrate for 500 milliseconds with default amplitude
+            vibrator.vibrate(VibrationEffect.createOneShot(500, VibrationEffect.DEFAULT_AMPLITUDE));
+        }
+    }
+
 
 
     // Method to read NFC tag content
